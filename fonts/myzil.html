@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap 101 Template</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <style type="text/css">
+        .caroussel-inner>.item>img,
+        .carousel-inner>.item>a>img {
+            width: 70%;
+            margin: auto;
+        }
+
+        body {
+            background-color: #a2ebfc;
+            background-image: images/lolo.jpg;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="#">TossToss</a>
+            </div>
+            <ul class="nav navbar-nav">
+                <li class="active"><a href="#">Home</a></li>
+                <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">life<span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">page1-1</a></li>
+                        <li><a href="#">page1-2</a></li>
+                        <li><a href="#">page1-3</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">page 2</a></li>
+                <li>
+                    <<a href="#">page3</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="container">
+        <p>this example adds a dropdown menu for the "page 1" button in the navigation bar.</p>
+    </div>
+
+    <div class="container">
+        <h1>My styles</h1>
+    </div>
+    <div class="container">
+        <h1>pills</h1>
+        <ul class="nav nav-pills">
+            <li class="active"><a href="#">Home</a></li>
+            <li class><a href="#">Menu 1</a></li>
+            <li class><a href="#">Maritime</a></li>
+            <li class><a href="#">Politics</a></li>
+        </ul>
+    </div>
+    <button type="button" class="btn btn-default btn-lg">Default</button>
+    <button type="button" class="btn btn-primary btn-md">primary</button>
+    <button type="button" class="btn btn-success btn-sm">Success</button>
+    <button type="button" class="btn btn-Info btn-xs">Info</button>
+    <button type="button" class="btn btn-warning">Warning</button>
+    <button type="button" class="btn btn-Danger btn Active">Danger</button>
+    <button type="button" class="btn btn-Danger btn diable">Danger</button>
+    <button type="button" class="btn btn-link">Link</button>
+    </div>
+    <div class="container">
+        <h2>Button Groups</h2>
+        <div class="btn-group btn-group-lg">
+            <button type="button" class="btn btn-primary">Apple</button>
+            <button type="button" class="btn btn-primary">Samsung</button>
+            <button type="button" class="btn btn-primary">sony</button>
+        </div>
+        <div class="container">
+            <h2>Button Groups</h2>
+            <div class="btn-group-vertical">
+                <button type="button" class="btn btn-primary">Apple</button>
+                <button type="button" class="btn btn-primary">Samsung</button>
+                <button type="button" class="btn btn-primary">sony</button>
+            </div>
+            <div class="container">
+                <h2>Nesting Button Groups</h2>
+                <p>Nest button groups to create drop down menus:</p>
+
+            </div>
+        </div>
+        <div class="container">
+            <br>
+            <div id="my carousel" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-target="#mycarousel" data-slide-to="0" class="active"></li>
+                    <li data-target="#mycarousel" data-slide-to="1"></li>
+                    <li data-targer="#mycarousel" data-slide-to="2"></li>
+                    <li data-target="#mycarousel" data-slide-to="3"></li>
+                </ol>
+                <div class="carousel-inner" role="listbox">
+                    <div class="item active">
+                        <img src="images/vally.jpg" alt="vally" width="460" height="345">
+                        <div class="carousel-caption">
+                            <h3>valentine</h3>
+                            <p>the atmosphere of love is present everywhere.</p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img src="images/vat.jpg" alt="vat" width="460" height="345">
+                        <div class="carousel-caption">
+                            <h3>Vat things</h3>
+                            <p> Reasonable vat.</p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img src="images/lion.jpg" alt="lion" width="460" height="345">
+                        <div class="carousel-caption">
+                            <h3>lion</h3>
+                            <p>Fearful lion,</p>
+                        </div>
+                    </div>
+                </div>
+                <a class="left carousel-control" href="#mycarousel" role="button" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+    <span class="sr-only">previous</span>
+    </a>
+                <a class="right carousel-control" href="#mycarousel" role="button" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+    </a>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <h2>Coloured Progress Bars</h2>
+        <p> The contextual classes colors the progress bars:</p>
+        <div class="progress">
+            <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="40" aria-valuemin="0" ariavaluemax="100"
+                style="width:40%">40%complete (success)
+            </div>
+        </div>
+        <div class="progress">
+            <div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"
+                style="width:70%">70%complete (danger)
+            </div>
+        </div>
+        <div class="progress">
+            <div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100"
+                style="width:40%">40%
+            </div>
+        </div>
+        <div class="progress">
+            <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width:50%">50%complete(info)
+            </div>
+        </div>
+        <div class="container">
+            <h2>Badges on buttons</h2>
+            <Button type="button" class="btn btn-primary">Primary <span class="badge">7</span></Button>
+            <button type="button" class="btn btn-success">Success<span class="badge">3</span></button>
+        </div>
+        <div class="btn-group">
+            <button type="button" Class="btn btn-primary">Apple</button>
+            <button type="button" class="btn btn-primary">Samsung</button>
+            <div class="btn-group">
+                <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+    <span class="caret"></span></button>
+                <ul class="dropdown-menu" role="menu">
+                    <li><a href="#">Tablet</a></li>
+                    <li><a href="#">Smartphone</a></li>
+                </ul>
+            </div>
+            <p>Resize the browser window to see the effect.</p>
+            <h2>Rounded Corners</h2>
+            <p> thame .img-rounded class adds rounded corners to an image (not available in IE8):</p>
+            <div class="container">
+                <img src="images/chuchu.jpg" class="cinque terre" width="604" height="336" <h2> Circle</h2>
+                <p> the .img-circle class shapes the image to a circle (not available in IE8):</p>
+                <img src="images/pont.jpg" class="img-circle" alt="Cinque Terre" width="304" height="236">
+            </div>
+        </div>
+        <div class="container">
+            <h2> Images </h2>
+            <p>The .Img-responsive class makes the image scale nicely to the parent element (resize the browser window to see
+                the effect):</p>
+            <img class="img-responsive" src="images/chanis.jpeg" alt="chanis" width="460" height="345">
+            <div class="container">
+                <h2> Image Gallery</h2>
+                <p> The .thumbnail class can be used to display an image gallery. Click on the images to see it in full size:</p>
+                <div class="row">
+                    <div class="col-md-4">
+                        <a href="images/abj.jpeg" class="thumbnail">
+                            <p>Pulpit rock: A famous tourist attraction in Abuja, Airport road.</p>
+                            <img src="images/abj.jpeg" alt="abj" style="width:150px;height:150px">
+                        </a>
+                    </div>
+                    <div class="container">
+                        <h2>Badges</h2>
+                        <a href="#">News <span class="badge">5</span></a><br>
+                        <a href="#">comments <span class="badge">10</span></a><br>
+                        <a href="#">Updates <span class="badge">2</span></a></div>
+                </div>
+                <div class="col-md-4">
+                    <a href="images/chuchu.jpeg" class="thumbnail">
+                        <p> The business developer: A rugged developer on the coast west of the northern region.</p>
+                        <img src="images/chuchu.jpg" alt="chuchu" style="width:150px;height:150px">
+                    </a>
+                </div>
+            </div>
+            <div class="container">
+                <h2>AcordionExample</h2>
+                <p><strong>Note:</strong>The<strong>data-parent</strong>attribute makes sure that all collapsible element under
+                    the specified table will be closed when one of the collapsible item is shown.</p>
+                <div class="panel-group" id="accordion">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-heading">
+                                <a data-toggle="collapse" data-parent="#accordion" href="#collapse1">collapsible Group1</a>
+                            </h4>
+                        </div>
+                        <div id="collapse1" class="panel-collapse collapse in">
+                            <div class="panel-body">The growth of the economy has always been the utmost target of all economies either developing
+                                and developed. This is because of the vital role it has on every economic variables like;
+                                expenditure level, inflation, unemployment tax and structural transformation of the economy.
+                                In view of this diverse effect, it is therefore necessary that fiscal instability be controlled
+                                to a great extent in achieving macro economic goal.
+                            </div>
+                        </div>
+                        <div class="panel panel-danger">
+                            <div class="panel-heading">
+                                <h4 class="panel-title">
+                                    <a data-toggle="collapse" data-parent="#accordion" href="#collapse2">Collapsible Group 2</a>
+                                </h4>
+                            </div>
+                            <div id="collapse2" class="panel-collapse collapse">
+                                <div class="panel-body">The growth of the economy has always been the utmost target of all economies either developing
+                                    and developed. This is because of the vital role it has on every economic variables like;
+                                    expenditure level, inflation, unemployment tax and structural transformation of the economy.
+                                    In view of this diverse effect, it is therefore necessary that fiscal instability be
+                                    controlled to a great extent in achieving macro economic goal.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="panel panel-info">
+                            <div class="panel-heading">
+                                <h4 class="panel-title">
+                                    <a data-toggle="collapse" data-parent="#accordion" href="#collapse3">collapsible Group 3</a>
+                                </h4>
+                            </div>
+                            <div id="collapse3" class="panel-collapse collaspe">
+                                <div class="panel-body">lorem The growth of the economy has always been the utmost target of all economies either
+                                    developing and developed. This is because of the vital role it has on every economic
+                                    variables like; expenditure level, inflation, unemployment tax and structural transformation
+                                    of the economy. In view of this diverse effect, it is therefore necessary that fiscal
+                                    instability be controlled to a great extent in achieving macro economic goal. </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="container">
+                <h2>collapsible list Groups</h2>
+                <div class="panel-group">
+                    <div class="panel panel-primary">
+                        <div class="panel-heading">
+                            <h4 class="panel-title">
+                                <a data-toggle="collapse" href="#collapse1">collapsible list group</a>
+                            </h4>
+                        </div>
+                        <div id="collapse1" class="paanel-collapse collapse">
+                            <ul class="list-group">
+                                <li class="list-group-item">One</li>
+                                <li class="list-group-item">two</li>
+                                <li class="list-group-item">three</li>
+                            </ul>
+                            <div class="panel-footer">Footer</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="jumbotron">
+                <h1> Boostrap is the most popular HTML, CSS, and JS framework for developing responsive, mobile first project
+                    on the web.</h1>
+                <p> this is some nerve.</p>
+                <p> this is some nerve</p>
+                <div class="container">
+                    <h2>well Size</h2>
+                    <div class="well well-sm">small well</div>
+                    <div class="well">Normal well</div>
+                    <div class="well well-lg">large well</div>
+                </div>
+                <div class="container">
+                    <h2>Glyphicon Examples</h2>
+                    <p>Envelope icon: <span class="glyphicon glyphicon-envelope"></span></p>
+                    <p>Envelope icon as a link:
+                        <a href="#"><span class="glyphicon glyphicon-envelope"></span></a></p>
+                    <p> seatch icon: <span class="glyphicon glyphicon-search"></span></p>
+                    <p>search icon on a styled button:
+                        <button type="button" class="btn btn-info">
+     <span class="glyphicon glyphicon-search"></span>Search</button></p>
+                    <p> Print icon: <span class="glyphicon glyphicon-print"></span></p>
+                    <p>print icon on a styled link button:
+                        <a href="#" class="btn btn-success btn-lg">
+     <span class="glyphicon glyphicon-print"></span>Print</a></p>
+                </div>
+                <div class="container">
+                    <h2> Alerts!</h2>
+                    <div class="alert alert-success fade in">
+                        <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+                        <strong>Success!</strong> This alert box could indicate a successful or positive action.
+                    </div>
+                    <div class=" alert alert-info fade in">
+                        <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+                        <strong>Info!</strong>This alert box could indicate a neutral information change or action.
+                    </div>
+                    <div class="alert alert-warning fade in">
+                        <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+                        <strong>Warning!</strong>This alert box could indicate a warning that might need attention.
+                    </div>
+                    <div class="alert alert-danger fade in">
+                        <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+                        <strong>Danger"</strong> This alert box could indicate a dangerous or potentially negative action.
+                    </div>
+                </div>
+                <h2>Contextual classes</h2>
+                <p>contextual classes can be used to color table cells. the classes that can be used are: .active, .success,.info,.warning.danger</p>
+                <div class="container">
+                    <h2>Pagination-Active state</h2>
+                    <p> Add class .active to let your user know which page he or she is on:</p>
+                    <ul class="pagination">
+                        <li><a href="#">1</a></li>
+                        <li class="active"><a href="#">2</a></li>
+                        <li><a href="#">3</a></li>
+                        <li><a href="#">4</a></li>
+                        <l1><a href="#">5</a></li>
+                    </ul>
+                </div>
+                <div class="container">
+                    <h2>pager</h2>
+                    <p>the .previous and .next classes align each link to the sides of the page:</p>
+                    <ul class="pager">
+                        <li class="previous"><a href="#">Previous</a>
+                            <li class="next"><a href="#"></a></li>
+                    </ul>
+                </div>
+                <div class="container">
+                    <h2>Dropdowns</h2>
+                    <p> the .dropdown class is used to indicate a dropdown menu.</p>
+                    <p>use the .dropdown class is used to actually build the dropdown menu.</p>
+                    <p> to open the dropdown menu, use a button or a link with a class of .dropdown-toggle and data-toggle and
+                        data-toggle="dropdown"</p>
+                    <div class="dropdown">
+                        <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Dropsomething
+    <span class="caret"></span></button>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">HTML</a></li>
+                            <li><a href="#">CSS</a></li>
+                            <li><a href="#">Javascript</a></li>
+                        </ul>
+                    </div>
+                    <div class="container">
+                        <h2>Dropdowns</h2>
+                        <p>the .divider is used to seperate links inside the dropmenu:</p>
+                        <div class="dropdown">
+                            <button class="btn btn-danger dropdown-togggle" type="button" data-toggle="dropdown"> Tutorials
+    <span class="caret"></span></button>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">HTML</a></li>
+                                <li><a href="#">css</a></li>
+                                <li><a href="#">javascript</a></li>
+                                <li class="divider"></li>
+                                <li><a href="#">About Us</a></li>
+                            </ul>
+                        </div>
+                        <div class="container">
+                            <h2>Simple collapsible</h2>
+                            <a href="#demo" class="btn btn-info" data-toggle="collapse">Simple collapsible</a>
+                            <div id="demo" class="collapse">
+                                Data will be gathered from annual reports of various organizations, especially, from revenue generating authorities, development
+                                and supervising authorities like; • National Bureau of Statistics • World Bank Data • World
+                                Bank Data Statistical Bulletin • Federal Ministry of Transport: research snd statistics unit
+                                • Nigerian port authority operational statistics
+                            </div>
+                        </div>
+                    </div>
+                    <div class="dropdown">
+                        <button class="btn btn-danger dropdown-togggle" type="button" data-toggle="dropdown"> Tutorials
+    <span class="caret"></span></button>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">HTML</a></li>
+                            <li><a href="#">css</a></li>
+                            <li><a href="#">javascript</a></li>
+                            <li class="divider"></li>
+                            <li class="dropdown-header">Dropdown header 2</li>
+                            <li><a href="#">About Us</a></li>
+                        </ul>
+                    </div>
+                    <div class="container">
+                        <h2>Dropdowns</h2>
+                        <p> The .dropdown class is used to indicate a dropdown menu.</p>
+                        <div class="dropdown">
+                            <button class="btn btn-success dropdown-toggle"=t ype=button id="menu1" data-toggle="dropdown">Tutorials
+ <span class="caret"></span></button>
+                            <ul class="dropdown-menu" role="menu" aria-labelledly="menu1">
+                                <li role="presentation"><a role="menuitem" tabindex="-1" href="#">HTML</a></li>
+                                <li role="presentation"><a role="menuitem" tabindex="-1" href="#">CSS</a></li>
+                                <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Javascript</a></li>
+                                <li role="presentation" class="divider"></li>
+                                <li role="presentation"><a role="menuitem" tabindex="-1" href="#"> About Us</a></li>
+                            </ul>
+                        </div>
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th>Firstname</th>
+                                    <th>lastname</th>
+                                    <th>Email</th>
+                                </tr>
+                                <tr class="danger">
+                                    <td>Mary</td>
+                                    <td>Moe</td>
+                                    <td>mary@example.com</td>
+                                </tr>
+                                <tr class="info">
+                                    <td>july</td>
+                                    <td>Dooley</td>
+                                    <td>july@example.com</td>
+                                </tr>
+                                </tbody>
+                            </thead>
+                        </table>
+                        <h2>contextual colors</h2>
+                        <p> use contextual classes to provide "meaning through colors":</p>
+                        <p class="text-muted">This Text is muted.</p>
+                        <P class="bg-primary">This text is important.</P>
+                        <p class="bg-success">This text indicate success.</p>
+                        <p class="bg-info">this text represent some information.</p>
+                        <p class="bg-warning"> this text represent some warning.</p>
+                        <p class="bg-danger">This text represent some danger.</p>
+                        <div class="row">
+                            <div class="col-sm-4" style="background-color:lavender;">.col-sm-4</div>
+                            <div class="col-sm-4" style="background-color: lavenderblush;">.col-sm-4</div>
+                            <div class="col-sm-4" style="background-color:lavender;">.col-sm-4</div>
+                        </div>
+                    </div>
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+</body>
+
+</html>
